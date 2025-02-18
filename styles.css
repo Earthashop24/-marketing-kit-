@@ -1,0 +1,288 @@
+
+       /* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sections */
+.section {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* CTA Button */
+.cta-button {
+    background: linear-gradient(135deg, #FF5733, #e94e2e);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #e94e2e, #FF5733);
+    transform: scale(1.05);
+}
+
+/* Video Section */
+.video-container {
+    margin: 10px 0;
+}
+
+iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sticky Buy Button */
+.sticky-button {
+    position: fixed;
+    bottom: 10px;
+    right: 110px;
+    background: linear-gradient(135deg, #FF5733, #e94e2e);
+    color: white;
+    padding: 18px 35px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sticky-button:hover {
+    background: linear-gradient(135deg, #e94e2e, #FF5733);
+    transform: scale(1.1);
+}
+
+/* Countdown Timer */
+.countdown {
+    font-size: 2.5em;
+    color: #FF5733;
+    font-weight: bold;
+    background: rgba(255, 87, 51, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite alternate;
+}
+
+/* Popup Box Styling */
+.exit-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+    border-radius: 12px;
+    z-index: 9999;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.exit-popup h2 {
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.exit-popup button {
+    background: #e63946;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.exit-popup button:hover {
+    background: #d62828;
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9998;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .section p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        font-size: 1.3em;
+        padding: 12px 25px;
+    }
+
+    .sticky-button {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+
+    .countdown {
+        font-size: 2em;
+        padding: 8px 16px;
+    }
+
+    .exit-popup {
+        width: 90%;
+    }
+}
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('checkmark-icon.png') no-repeat left center;
+    padding-left: px;
+    margin: 5px 0;
+    color: #444;
+    font-size: 19px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff;
+    background: #4a22ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0660e6;
+}
